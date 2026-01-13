@@ -13,7 +13,7 @@ Below are some of the sample projects you might find in this repository:
 - OOP Examples — Demonstrations of classes, inheritance, and multiple inheritance  
 - Other Python utilities and practice scripts
 
-> *Note: If you don’t see these in the repo yet, feel free to add them!
+> Note: If you don’t see these in the repo yet, feel free to add them!
 
 # How to Run the Programs
 
