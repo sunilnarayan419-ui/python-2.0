@@ -4,32 +4,32 @@
 
 # Explicit
 
-# name = "sunil" 
-# age = 20 
-# gpa = 6.0
-# student = True 
+name = "sunil" 
+age = 20 
+gpa = 6.0
+student = True 
 
-# print(type(name))
-# print(type(age)) 
-# print(type(gpa)) 
-# print(type(student)) 
+print(type(name))
+print(type(age)) 
+print(type(gpa)) 
+print(type(student)) 
 
-# age = float(age) 
-# print(type(age)) 
-# print(age) 
+age = float(age) 
+print(type(age)) 
+print(age) 
 
-# gpa = int(gpa) 
-# print(gpa) 
+gpa = int(gpa) 
+print(gpa) 
 
-# student = str(student) 
-# print(student) 
-# print(type(student))  
+student = str(student) 
+print(student) 
+print(type(student))  
 
-# age = bool(age) 
-# print(age) 
+age = bool(age) 
+print(age) 
 
-# name = bool(name) 
-# print(name) 
+name = bool(name) 
+print(name) 
 
 # Implicit 
 

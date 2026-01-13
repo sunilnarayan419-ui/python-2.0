@@ -16,32 +16,58 @@ class Animal:
 
 class Prey(Animal):
     def flee(self):
-        print(f"{self.name} is fleeing")
+        print(f"{self.name} is fleeing from danger!")
 
 
 class Predator(Animal):
     def hunt(self):
-        print(f"{self.name} is hunting")
+        print(f"{self.name} is hunting for food!")
 
 
 class Rabbit(Prey):
-    pass
+    def eat(self):
+        print(f"{self.name} is eating carrots 🥕")
 
 
 class Hawk(Predator):
-    pass
+    def sleep(self):
+        print(f"{self.name} is sleeping on a tree 🌳")
 
 
 class Fish(Prey, Predator):
-    pass
+    def swim(self):
+        print(f"{self.name} is swimming 🐟")
+
+    def eat(self):
+        print(f"{self.name} is eating plankton")
 
 
+# -------------------------
 # Objects
+# -------------------------
 rabbit = Rabbit("Bugs")
 hawk = Hawk("Tony")
 fish = Fish("Nemo")
 
+# -------------------------
 # Testing
-fish.hunt()
+# -------------------------
+print("\n--- Rabbit ---")
+rabbit.eat()
+rabbit.sleep()
+rabbit.flee()
+
+print("\n--- Hawk ---")
+hawk.eat()
+hawk.sleep()
+hawk.hunt()
+
+print("\n--- Fish ---")
+fish.swim()
+fish.eat()
 fish.sleep()
 fish.flee()
+fish.hunt()
+
+print("\nMRO of Fish:")
+print(Fish.mro())

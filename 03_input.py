@@ -2,23 +2,22 @@
 #  Returns the entered data as a string.
 
 # indentity
-# name = str(input(f"Enter your name sir :"))
-# age = int(input(f" Sir please enter your age : "))
-# city = str(input(f"Your city sir : "))
-# age = age + 2
-# print( f" hello {name}")
-# print(f"HAPPY GAY DAY SIR ")
-# print(f" You are {age} year old.")
-# print(f" You belongs to  {city}")
+name = str(input(f"Enter your name sir :"))
+age = int(input(f" Sir please enter your age : "))
+city = str(input(f"Your city sir : "))
+age = age + 2
+print( f" hello {name}")
+print(f"HAPPY BIRTH DAY SIR ")
+print(f" You are {age} year old.")
+print(f" You belongs to  {city}")
 
 # ex 1
 # Rectangle area calc
-# l = float(input(f"Enter the length : "))
-# w = float(input(f"Enter width : "))
+l = float(input(f"Enter the length : "))
+w = float(input(f"Enter width : "))
 
-# area = l*w
-
-# print(f" The area is : {area} cm^2")
+area = l*w
+print(f" The area is : {area} cm^2")
 
 # ex 2
 

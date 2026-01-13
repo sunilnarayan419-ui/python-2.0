@@ -2,16 +2,16 @@
 # print or assign one of two value based on a condition
 # X if condition else Y 
 
+a = 24
+b = 45
+num = 34
 
-# num = 34
+print("Positive"if num> 0 else "Negative")
+result = "EVEN" if num % 2 == 0  else "ODD"
+max_num = a if a > b else b 
+min_num = a  if a < b else a 
 
-# print("Positive"if num> 0 else "Negative")
-# result = "EVEN" if num % 2 == 0  else "ODD"
-# max_num = a if a > b else b 
-# min_num = a  if a < b else a 
-
-
-# print(result) 
+print(result) 
 
 # for age 
 age = int(input("Enter your age: "))
