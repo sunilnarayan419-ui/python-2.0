@@ -1,0 +1,98 @@
+# Magic method = Dunder method (double underscore) __init__, __str__ , __eq__
+# They are automatically called by many of Phon's built-in operations.
+# They allo developer to define or customize the behavior of objects.
+
+class Student:
+    def __init__(self, name, gpa):
+        self.name = name
+        self.gpa = gpa
+        
+    def __str__(self):
+        return f"name : {self.name}, gpa : {self.gpa}"
+    
+    def __eq__(self, other):
+        if isinstance(other, Student):
+            return self.name == other.name
+        return False
+    
+    def __gt__(self, other):
+        if isinstance(other, Student):
+            return self.gpa > other.gpa
+        return NotImplemented
+
+
+# ELEMENTS
+student1 = Student("sunil", 5.6)
+student2 = Student("aman", 6.5)
+
+# TESTING
+print(student1)
+print(student2)
+
+print(student1 == student2)   # compare names
+print(student1 > student2)    # compare gpa
+
+
+# Ex 1
+class Book:
+    
+    def __init__(self , title , author , num_pages):
+        self.title = title
+        self.author = author
+        self.num_pages = num_pages
+        
+    def __str__(self):
+        return f"'{self.title}' by {self.author}"
+    
+    def __eq__(self,other):
+        return self.title == other.title and self.author == other.author
+    
+    def __lt__(self, other):
+        return self.num_pages < other.num_pages 
+    
+    def __gt__(self, other):
+        return self.num_pages > other.num_pages 
+    
+    def __add__(self , other):
+        return f"{self.num_pages + other.num_pages} pages"
+    
+    def __contains__(self, keyword):
+        return keyword in self.title or keyword in self.author 
+    
+    def __getitem__(self, key ):
+        if key == "title":
+            return self.title
+        if key == "author":
+            return self.author
+        if key == "num_pages":
+            return self.num_pages
+        else: 
+            return f"key '{key}' was not found"
+    
+# ELEMENTS
+book1 = Book(f"The Hobbit","J.R.R. Tolkien",310) 
+book2 = Book(f"Harry Potter and The Philosopher's Stone", "J.K.Rowling",233)
+book3 = Book(f"The lion, The Witch and The Wardrobe","C.S.Lewis",172)
+
+# TESTING
+print(book1)
+print(book2)
+print(book3)
+
+print(book1 == book2)
+print(book2 == book3)   
+
+print(book1 < book2)
+print(book2 < book3)   
+
+print(book1 > book2)
+print(book2 > book3) 
+
+print(book1 + book2)
+print(book2 + book3)    
+
+print("Lion" in book1)
+print("Lion" in book2)
+print("Lion" in book3)  
+
+print(book2['title'])   
