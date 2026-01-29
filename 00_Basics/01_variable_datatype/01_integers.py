@@ -59,6 +59,8 @@ print(a == b)
 print(a > b)
 print(a < b)
 print(a != b)
+print(a <= b) 
+print(a >= b) 
 
 
 # --------------------------------
@@ -76,3 +78,22 @@ print(max(1, 3, 6, 8, 0))
 # --------------------------------
 for i in range(5):
     print(i + 1)
+
+# --------------------------------
+# The and Operator's Truth Table 
+# --------------------------------
+
+print(True and True)    
+print(True and False)   
+print(False and True)   
+print(False and False)  
+
+# --------------------------------
+# The or Operator's Truth Table 
+# --------------------------------
+
+print(True or True)     
+print(True or False)    
+print(False or True)    
+print(False or False)   
+
