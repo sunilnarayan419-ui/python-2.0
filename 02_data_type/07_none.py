@@ -2,7 +2,7 @@ class Person:
     @staticmethod
     def get_details(name=None, age=None, city=None):
         if name is None or age is None or city is None:
-            return None   
+            return None               
         
         return {
             "name": name,
